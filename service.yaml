@@ -20,7 +20,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 50000
-      targetPort: 50000
+    - port: 32010
+      targetPort: 32010
   selector:
     app: jenkins
