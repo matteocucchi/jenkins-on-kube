@@ -52,7 +52,9 @@ spec:
             - name: jenkins-data
               mountPath: /var/jenkins_home
             - name: docker
-              mountPath: /var/lib/docker       
+              mountPath: /var/lib/docker
+            - name: docker-sock
+              mountPath: /var/run       
       volumes:
         - name: jenkins-data
           persistentVolumeClaim:
@@ -60,3 +62,7 @@ spec:
         - name: docker 
           hostPath: 
             path: /var/lib/docker
+        - name: docker-sock
+          hostPath: 
+            path: /var/run
+        
