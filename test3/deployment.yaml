@@ -19,8 +19,7 @@ spec:
       serviceAccountName: jenkins-admin
       containers:
         - name: jenkins
-          image: jenkins:lts-docker
-          imagePullPolicy: Never
+          image: matteocucchi/jenkins:lts-docker
           resources:
             limits:
               memory: "2Gi"
