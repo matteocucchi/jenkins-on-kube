@@ -13,4 +13,5 @@ RUN add-apt-repository \
    stable"
 RUN apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 RUN apt-get install bc -y
+RUN chmod 666 /var/run/docker.sock
 EXPOSE 8080
