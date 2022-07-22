@@ -20,6 +20,7 @@ spec:
       containers:
         - name: jenkins
           image: matteocucchi/jenkins:lts-docker
+          imagePullPolicy: Always
           resources:
             limits:
               memory: "2Gi"
